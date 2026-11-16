@@ -1,12 +1,33 @@
-### Windows
-# Windows thumbnail cache files
+# Local Python environment and generated caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Private configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Local document drafts, render output and the runtime used on this computer
+/report/_work/
+/report/ban_nop_2026/
+/report/BoBanGiao_*.zip
+/report/figures/*.png
+/README_NLM_LAB.md
+/HUONG_DAN_BAN_GIAO.md
+
+# Redundant generated noisy inputs; reproducible from clean images and seeds
+/data/noisy/
+/results/webapp_demo_20261116/initial.png
+
+# OS, editor and temporary files
+*.log
+~$*
 Thumbs.db
-
-# Folder config file
 [Dd]esktop.ini
-
-# Recycle Bin used on file shares
 $RECYCLE.BIN/
-
-# Windows shortcuts
 *.lnk
+.DS_Store

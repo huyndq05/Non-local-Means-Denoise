@@ -1,0 +1,12 @@
+{
+  "connected": true,
+  "fiji_version": "2.18.0/1.54t",
+  "enabled_categories": [
+    "image",
+    "log",
+    "roi",
+    "command"
+  ],
+  "uptime_s": 1,
+  "action_count": 0
+}

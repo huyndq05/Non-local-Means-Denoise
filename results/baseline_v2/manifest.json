@@ -1,0 +1,2005 @@
+{
+  "protocol": "fixed baseline, center crops, no parameter tuning, paired input",
+  "args": {
+    "input": "data/clean_gray",
+    "output": "results/baseline_v2",
+    "size": 256,
+    "max_images": 13,
+    "repeats": 3,
+    "seeds": [
+      42
+    ],
+    "radius": 5
+  },
+  "items": [
+    {
+      "id": "01_blonde_white_woman_Gaussian_10_s42",
+      "source": "data\\clean_gray\\01_blonde_white_woman.png",
+      "crop_xywh": [
+        128,
+        256,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 10,
+        "seed": 42
+      },
+      "input_png_sha256": "b4a189160f381283cc22b8a071f0738a5a78b4f4e2506af568aceb15dc232d44"
+    },
+    {
+      "id": "01_blonde_white_woman_Gaussian_20_s42",
+      "source": "data\\clean_gray\\01_blonde_white_woman.png",
+      "crop_xywh": [
+        128,
+        256,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 20,
+        "seed": 42
+      },
+      "input_png_sha256": "28ad449573a351a070da4813e9625a75a527aba5e196c3822b765e2aebbe61bd"
+    },
+    {
+      "id": "01_blonde_white_woman_Gaussian_30_s42",
+      "source": "data\\clean_gray\\01_blonde_white_woman.png",
+      "crop_xywh": [
+        128,
+        256,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 30,
+        "seed": 42
+      },
+      "input_png_sha256": "3e94cb8fb67aa1fd5a4cefdb15a5c2b6dbf1febb4fadbb5306aa2a8f3413fb98"
+    },
+    {
+      "id": "01_blonde_white_woman_Saltandpepper_0.01_s42",
+      "source": "data\\clean_gray\\01_blonde_white_woman.png",
+      "crop_xywh": [
+        128,
+        256,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.01,
+        "seed": 42
+      },
+      "input_png_sha256": "46d62b401a31ef8ab96f7dce5bca61a8b08a4ab8a3cd98783c634e6762e73586"
+    },
+    {
+      "id": "01_blonde_white_woman_Saltandpepper_0.05_s42",
+      "source": "data\\clean_gray\\01_blonde_white_woman.png",
+      "crop_xywh": [
+        128,
+        256,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.05,
+        "seed": 42
+      },
+      "input_png_sha256": "8d97a011c64bce041858fe7e4bc5c80d84aec385da1c741392bb76c3b46e47d2"
+    },
+    {
+      "id": "01_blonde_white_woman_Saltandpepper_0.1_s42",
+      "source": "data\\clean_gray\\01_blonde_white_woman.png",
+      "crop_xywh": [
+        128,
+        256,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.1,
+        "seed": 42
+      },
+      "input_png_sha256": "3d3f0537248e3b393bb056e2e74c24e4815e06d71915d70b136529ecb6f7c7d3"
+    },
+    {
+      "id": "01_blonde_white_woman_Poisson_10_s42",
+      "source": "data\\clean_gray\\01_blonde_white_woman.png",
+      "crop_xywh": [
+        128,
+        256,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Poisson",
+        "level": 10,
+        "seed": 42
+      },
+      "input_png_sha256": "c1790581234f7e1af236fc48c205fdf39693bbfe16f69b00b0f6c79783c735e6"
+    },
+    {
+      "id": "01_blonde_white_woman_Poisson_30_s42",
+      "source": "data\\clean_gray\\01_blonde_white_woman.png",
+      "crop_xywh": [
+        128,
+        256,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Poisson",
+        "level": 30,
+        "seed": 42
+      },
+      "input_png_sha256": "9b36e33acd7a6215bd208115eca6d37033d1136609464f423bae8c7f654bc59f"
+    },
+    {
+      "id": "01_blonde_white_woman_Poisson_100_s42",
+      "source": "data\\clean_gray\\01_blonde_white_woman.png",
+      "crop_xywh": [
+        128,
+        256,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Poisson",
+        "level": 100,
+        "seed": 42
+      },
+      "input_png_sha256": "8a2f949d73e107eca7e6a8ddf239f07bf584b539227363f39df117f0e2df58e6"
+    },
+    {
+      "id": "02_old_building_with_read_door_and_window_Gaussian_10_s42",
+      "source": "data\\clean_gray\\02_old_building_with_read_door_and_window.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "calibration",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 10,
+        "seed": 42
+      },
+      "input_png_sha256": "4b37cd22870f0acc7239ea88710190d381de54d7e5d17e69efa5f725d86a76ae"
+    },
+    {
+      "id": "02_old_building_with_read_door_and_window_Gaussian_20_s42",
+      "source": "data\\clean_gray\\02_old_building_with_read_door_and_window.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "calibration",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 20,
+        "seed": 42
+      },
+      "input_png_sha256": "638f8e552e5bd1cf9b8e522d25dde5122a497dc39e8e3967a83155e60dd7cad1"
+    },
+    {
+      "id": "02_old_building_with_read_door_and_window_Gaussian_30_s42",
+      "source": "data\\clean_gray\\02_old_building_with_read_door_and_window.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "calibration",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 30,
+        "seed": 42
+      },
+      "input_png_sha256": "125fe583c61e90535ca03e7c712e59e90907f446cc4030f8394987a5e8a11fb0"
+    },
+    {
+      "id": "02_old_building_with_read_door_and_window_Saltandpepper_0.01_s42",
+      "source": "data\\clean_gray\\02_old_building_with_read_door_and_window.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "calibration",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.01,
+        "seed": 42
+      },
+      "input_png_sha256": "67376f396a6cfec2ff392919905f5448111b3586d7eee4ecc0a0db879c20ab78"
+    },
+    {
+      "id": "02_old_building_with_read_door_and_window_Saltandpepper_0.05_s42",
+      "source": "data\\clean_gray\\02_old_building_with_read_door_and_window.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "calibration",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.05,
+        "seed": 42
+      },
+      "input_png_sha256": "b40d6f9289a58ed9eb4372c419d1aa7852014d75942f69729e14295a2384d1a8"
+    },
+    {
+      "id": "02_old_building_with_read_door_and_window_Saltandpepper_0.1_s42",
+      "source": "data\\clean_gray\\02_old_building_with_read_door_and_window.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "calibration",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.1,
+        "seed": 42
+      },
+      "input_png_sha256": "049d3b963b1b2079107a2c006b734f7dd49bb9ea7703938d08bbed91e7ec6b51"
+    },
+    {
+      "id": "02_old_building_with_read_door_and_window_Poisson_10_s42",
+      "source": "data\\clean_gray\\02_old_building_with_read_door_and_window.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "calibration",
+      "noise": {
+        "kind": "Poisson",
+        "level": 10,
+        "seed": 42
+      },
+      "input_png_sha256": "5d694b0d227c961bd28a50045fb602c3db9fcd9697fbb37787b772b7294b10f5"
+    },
+    {
+      "id": "02_old_building_with_read_door_and_window_Poisson_30_s42",
+      "source": "data\\clean_gray\\02_old_building_with_read_door_and_window.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "calibration",
+      "noise": {
+        "kind": "Poisson",
+        "level": 30,
+        "seed": 42
+      },
+      "input_png_sha256": "487e06b203db4d310fc1ee2ffb3786b3b0c32a8458c77d64ba3c64c133e8aee4"
+    },
+    {
+      "id": "02_old_building_with_read_door_and_window_Poisson_100_s42",
+      "source": "data\\clean_gray\\02_old_building_with_read_door_and_window.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "calibration",
+      "noise": {
+        "kind": "Poisson",
+        "level": 100,
+        "seed": 42
+      },
+      "input_png_sha256": "45e9020fbfc87f2bcff5459cc91853065178531c8d6497ed11d31ee01c22ed29"
+    },
+    {
+      "id": "03_white_roman_statue_Gaussian_10_s42",
+      "source": "data\\clean_gray\\03_white_roman_statue.png",
+      "crop_xywh": [
+        128,
+        256,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 10,
+        "seed": 42
+      },
+      "input_png_sha256": "e659410e04a6a4e2818f357d0eb234140d61065e662623bcba0ec509a8c1e222"
+    },
+    {
+      "id": "03_white_roman_statue_Gaussian_20_s42",
+      "source": "data\\clean_gray\\03_white_roman_statue.png",
+      "crop_xywh": [
+        128,
+        256,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 20,
+        "seed": 42
+      },
+      "input_png_sha256": "cc049bd51aca91f8f65ddc6e1b7db02cf12d40f9c60382b3bd932faa25c12e49"
+    },
+    {
+      "id": "03_white_roman_statue_Gaussian_30_s42",
+      "source": "data\\clean_gray\\03_white_roman_statue.png",
+      "crop_xywh": [
+        128,
+        256,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 30,
+        "seed": 42
+      },
+      "input_png_sha256": "4efc8d85cc8b368e4973724c2a58e899dbd129198559437f65f324a0795cba3c"
+    },
+    {
+      "id": "03_white_roman_statue_Saltandpepper_0.01_s42",
+      "source": "data\\clean_gray\\03_white_roman_statue.png",
+      "crop_xywh": [
+        128,
+        256,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.01,
+        "seed": 42
+      },
+      "input_png_sha256": "f92edaf9d073bf80d1bbf8f2d1e6522e833365fe1bb6596fe5f1bd1c1f4f5e53"
+    },
+    {
+      "id": "03_white_roman_statue_Saltandpepper_0.05_s42",
+      "source": "data\\clean_gray\\03_white_roman_statue.png",
+      "crop_xywh": [
+        128,
+        256,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.05,
+        "seed": 42
+      },
+      "input_png_sha256": "4ba12619505d1e5be6e2ba1e96b84c65dfb62d19a4625b5f9c1d200b46f0e378"
+    },
+    {
+      "id": "03_white_roman_statue_Saltandpepper_0.1_s42",
+      "source": "data\\clean_gray\\03_white_roman_statue.png",
+      "crop_xywh": [
+        128,
+        256,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.1,
+        "seed": 42
+      },
+      "input_png_sha256": "9879b1bdb676616235f6e8cae01ef9abaafc97278e89de43417ac111f47b4c4d"
+    },
+    {
+      "id": "03_white_roman_statue_Poisson_10_s42",
+      "source": "data\\clean_gray\\03_white_roman_statue.png",
+      "crop_xywh": [
+        128,
+        256,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Poisson",
+        "level": 10,
+        "seed": 42
+      },
+      "input_png_sha256": "1db125ec4c66473e258f236d6c1b2bedd82f02c21bb14464aafe2b4b4e7849e2"
+    },
+    {
+      "id": "03_white_roman_statue_Poisson_30_s42",
+      "source": "data\\clean_gray\\03_white_roman_statue.png",
+      "crop_xywh": [
+        128,
+        256,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Poisson",
+        "level": 30,
+        "seed": 42
+      },
+      "input_png_sha256": "6b258ae7cf2a294a7b9a405b07e0d3fc22e8d9a384801371d806ae9994ca6fda"
+    },
+    {
+      "id": "03_white_roman_statue_Poisson_100_s42",
+      "source": "data\\clean_gray\\03_white_roman_statue.png",
+      "crop_xywh": [
+        128,
+        256,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Poisson",
+        "level": 100,
+        "seed": 42
+      },
+      "input_png_sha256": "29596eaf3cd5cf23b26f9bda88b3b6c2031c01476eaa3f5d4ea6fe1fb0213bba"
+    },
+    {
+      "id": "04_single_plane_Gaussian_10_s42",
+      "source": "data\\clean_gray\\04_single_plane.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 10,
+        "seed": 42
+      },
+      "input_png_sha256": "523a88e7149ed58687aca982e37bb396185be05c16829887a2c75abcebbc3967"
+    },
+    {
+      "id": "04_single_plane_Gaussian_20_s42",
+      "source": "data\\clean_gray\\04_single_plane.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 20,
+        "seed": 42
+      },
+      "input_png_sha256": "fa9c73a10c9aed1d33832a2cc0f62221cae4a0b4e0e9a8bd504300ee24ca946b"
+    },
+    {
+      "id": "04_single_plane_Gaussian_30_s42",
+      "source": "data\\clean_gray\\04_single_plane.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 30,
+        "seed": 42
+      },
+      "input_png_sha256": "6583cd3e99a156f8e756b13a403851d67f178e249fa20415c2af4b0410d31aa4"
+    },
+    {
+      "id": "04_single_plane_Saltandpepper_0.01_s42",
+      "source": "data\\clean_gray\\04_single_plane.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.01,
+        "seed": 42
+      },
+      "input_png_sha256": "48d2179c64119ec2fb52d040a038790ae43f894cd2782838e652edd103825bdf"
+    },
+    {
+      "id": "04_single_plane_Saltandpepper_0.05_s42",
+      "source": "data\\clean_gray\\04_single_plane.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.05,
+        "seed": 42
+      },
+      "input_png_sha256": "5d97c0a3a524ffab98339a4b517fdebe3d2fbe7d893eb0c4fc3420bf9d2a1f3d"
+    },
+    {
+      "id": "04_single_plane_Saltandpepper_0.1_s42",
+      "source": "data\\clean_gray\\04_single_plane.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.1,
+        "seed": 42
+      },
+      "input_png_sha256": "07afb30c201fe979b5a9f14730501b2ffa72cf4d100da2d8ad2e7d80c43a1555"
+    },
+    {
+      "id": "04_single_plane_Poisson_10_s42",
+      "source": "data\\clean_gray\\04_single_plane.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Poisson",
+        "level": 10,
+        "seed": 42
+      },
+      "input_png_sha256": "e7c3bb68cd8d3ecd65e0d5e73caac3d22a9dd94d97f8df0614478eca375600aa"
+    },
+    {
+      "id": "04_single_plane_Poisson_30_s42",
+      "source": "data\\clean_gray\\04_single_plane.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Poisson",
+        "level": 30,
+        "seed": 42
+      },
+      "input_png_sha256": "2f249f9d91af03fddf6f4cd65ded3a10dcb33706b06adc603faacb4d227ae8f4"
+    },
+    {
+      "id": "04_single_plane_Poisson_100_s42",
+      "source": "data\\clean_gray\\04_single_plane.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Poisson",
+        "level": 100,
+        "seed": 42
+      },
+      "input_png_sha256": "ed4197494db9de5ce96b322b77c7af5c752e31d4964917b0a2f362fa19616361"
+    },
+    {
+      "id": "05_close-up_view_of_latch_Gaussian_10_s42",
+      "source": "data\\clean_gray\\05_close-up_view_of_latch.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 10,
+        "seed": 42
+      },
+      "input_png_sha256": "08baf1cc50d9a04fae957708e3fad2e9502e2903ac35eda434afe7d4c4c4a494"
+    },
+    {
+      "id": "05_close-up_view_of_latch_Gaussian_20_s42",
+      "source": "data\\clean_gray\\05_close-up_view_of_latch.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 20,
+        "seed": 42
+      },
+      "input_png_sha256": "61da913c64803bdd0c9718f45a16939b77a403798080252ad63ccc306c5f26af"
+    },
+    {
+      "id": "05_close-up_view_of_latch_Gaussian_30_s42",
+      "source": "data\\clean_gray\\05_close-up_view_of_latch.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 30,
+        "seed": 42
+      },
+      "input_png_sha256": "ab43ac8a56df54f6ec62afbc0a6f5e578a46f3ce646d7330901314c91439365c"
+    },
+    {
+      "id": "05_close-up_view_of_latch_Saltandpepper_0.01_s42",
+      "source": "data\\clean_gray\\05_close-up_view_of_latch.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.01,
+        "seed": 42
+      },
+      "input_png_sha256": "4d8524ca00c15952584169d10ff0376b4d7e1e51c812a30e87b9fa9ee16c414a"
+    },
+    {
+      "id": "05_close-up_view_of_latch_Saltandpepper_0.05_s42",
+      "source": "data\\clean_gray\\05_close-up_view_of_latch.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.05,
+        "seed": 42
+      },
+      "input_png_sha256": "ddac4a2c13a2a589cdcdd0302d8ae3eb4cce205aa9e3e5fc10f65730191c22e0"
+    },
+    {
+      "id": "05_close-up_view_of_latch_Saltandpepper_0.1_s42",
+      "source": "data\\clean_gray\\05_close-up_view_of_latch.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.1,
+        "seed": 42
+      },
+      "input_png_sha256": "d5c77701aef4686a8e6a03a826ca3b1d89e2d379d7456b247773337eb98d97dd"
+    },
+    {
+      "id": "05_close-up_view_of_latch_Poisson_10_s42",
+      "source": "data\\clean_gray\\05_close-up_view_of_latch.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Poisson",
+        "level": 10,
+        "seed": 42
+      },
+      "input_png_sha256": "e76eb503bf4b46feb2474f0d478377c34daf12fcffdb4216fb81a0c7c3c05f03"
+    },
+    {
+      "id": "05_close-up_view_of_latch_Poisson_30_s42",
+      "source": "data\\clean_gray\\05_close-up_view_of_latch.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Poisson",
+        "level": 30,
+        "seed": 42
+      },
+      "input_png_sha256": "90be688878b5b885ddcb65f42e3d45ca8a79dea999a1a588a0a08ea0c464bc76"
+    },
+    {
+      "id": "05_close-up_view_of_latch_Poisson_100_s42",
+      "source": "data\\clean_gray\\05_close-up_view_of_latch.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Poisson",
+        "level": 100,
+        "seed": 42
+      },
+      "input_png_sha256": "60a62e94345ef2359904bce182c20ddd91c62254afcb91d1fa8f34f6dc303327"
+    },
+    {
+      "id": "06_caps_Gaussian_10_s42",
+      "source": "data\\clean_gray\\06_caps.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "calibration",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 10,
+        "seed": 42
+      },
+      "input_png_sha256": "e163323804b838ffdd2828748319ea85e96d35700dd789949fac9ec3417e2253"
+    },
+    {
+      "id": "06_caps_Gaussian_20_s42",
+      "source": "data\\clean_gray\\06_caps.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "calibration",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 20,
+        "seed": 42
+      },
+      "input_png_sha256": "ddff9b1caf0863942918284326658b1257661202446be8a7b445666562fad975"
+    },
+    {
+      "id": "06_caps_Gaussian_30_s42",
+      "source": "data\\clean_gray\\06_caps.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "calibration",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 30,
+        "seed": 42
+      },
+      "input_png_sha256": "0f3dc8e3d67d6f3f41d0d7b354dfc6bcb50814e8bc0a41e2c6b21ca817924a6b"
+    },
+    {
+      "id": "06_caps_Saltandpepper_0.01_s42",
+      "source": "data\\clean_gray\\06_caps.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "calibration",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.01,
+        "seed": 42
+      },
+      "input_png_sha256": "b8842d4835f0a5661b92c38ffbbab699cf7b8364a37cb8653e4a3658869fb374"
+    },
+    {
+      "id": "06_caps_Saltandpepper_0.05_s42",
+      "source": "data\\clean_gray\\06_caps.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "calibration",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.05,
+        "seed": 42
+      },
+      "input_png_sha256": "4b1d50ecfbcfc343d0c70261e2556b910d1d4da07e79e5589653d89e2c8d513f"
+    },
+    {
+      "id": "06_caps_Saltandpepper_0.1_s42",
+      "source": "data\\clean_gray\\06_caps.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "calibration",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.1,
+        "seed": 42
+      },
+      "input_png_sha256": "15e5198a0922450a82197d0fd021921a6304241bbb43233b7406a4a2602dd4f2"
+    },
+    {
+      "id": "06_caps_Poisson_10_s42",
+      "source": "data\\clean_gray\\06_caps.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "calibration",
+      "noise": {
+        "kind": "Poisson",
+        "level": 10,
+        "seed": 42
+      },
+      "input_png_sha256": "1def7c70b2c88bb4807dd60465f9f8d1e4834f78a86f21a941969f4e0554f2e6"
+    },
+    {
+      "id": "06_caps_Poisson_30_s42",
+      "source": "data\\clean_gray\\06_caps.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "calibration",
+      "noise": {
+        "kind": "Poisson",
+        "level": 30,
+        "seed": 42
+      },
+      "input_png_sha256": "e779cad5703ea608e5e4a70cd660eda715d89477ee46a145ceed330330722187"
+    },
+    {
+      "id": "06_caps_Poisson_100_s42",
+      "source": "data\\clean_gray\\06_caps.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "calibration",
+      "noise": {
+        "kind": "Poisson",
+        "level": 100,
+        "seed": 42
+      },
+      "input_png_sha256": "7f3651fcd11b3a71a9eedb1b6b011ef796caaa69465eca3244525283900e403f"
+    },
+    {
+      "id": "07_motor_racers_Gaussian_10_s42",
+      "source": "data\\clean_gray\\07_motor_racers.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 10,
+        "seed": 42
+      },
+      "input_png_sha256": "64917b561a7a097028b9f08d667624d160a730662ba8e2e349ea98e8d982eea3"
+    },
+    {
+      "id": "07_motor_racers_Gaussian_20_s42",
+      "source": "data\\clean_gray\\07_motor_racers.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 20,
+        "seed": 42
+      },
+      "input_png_sha256": "1f2f37bfe4c035173ebad719bcc8f94689874b8c5fccf27d564a7875c2073c56"
+    },
+    {
+      "id": "07_motor_racers_Gaussian_30_s42",
+      "source": "data\\clean_gray\\07_motor_racers.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 30,
+        "seed": 42
+      },
+      "input_png_sha256": "44c518143ccf729c3bcd0b9474b75a1c1b45cb8856ecc7275ef9237c0c64ad49"
+    },
+    {
+      "id": "07_motor_racers_Saltandpepper_0.01_s42",
+      "source": "data\\clean_gray\\07_motor_racers.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.01,
+        "seed": 42
+      },
+      "input_png_sha256": "a245399b42ef142debf79b9b01168adae0b9d16607613d3bd1c65d89bdbe652e"
+    },
+    {
+      "id": "07_motor_racers_Saltandpepper_0.05_s42",
+      "source": "data\\clean_gray\\07_motor_racers.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.05,
+        "seed": 42
+      },
+      "input_png_sha256": "ac8d050822d97d1db95c4c098b361a4e2c819b65dfec55092c3dd69d780fa458"
+    },
+    {
+      "id": "07_motor_racers_Saltandpepper_0.1_s42",
+      "source": "data\\clean_gray\\07_motor_racers.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.1,
+        "seed": 42
+      },
+      "input_png_sha256": "3e3023cfbcbad76446601062cd368c9511537d303976324fcef7db7f4f9319d1"
+    },
+    {
+      "id": "07_motor_racers_Poisson_10_s42",
+      "source": "data\\clean_gray\\07_motor_racers.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Poisson",
+        "level": 10,
+        "seed": 42
+      },
+      "input_png_sha256": "4f1add97102238e7802d0f3930590431cea6ece631141fa9241b25301432db7a"
+    },
+    {
+      "id": "07_motor_racers_Poisson_30_s42",
+      "source": "data\\clean_gray\\07_motor_racers.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Poisson",
+        "level": 30,
+        "seed": 42
+      },
+      "input_png_sha256": "178055355c2ca5ec9b375f54f0361ef0a52a0c7e8478ac721edf9ed12e96e103"
+    },
+    {
+      "id": "07_motor_racers_Poisson_100_s42",
+      "source": "data\\clean_gray\\07_motor_racers.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Poisson",
+        "level": 100,
+        "seed": 42
+      },
+      "input_png_sha256": "67be4cb735a2460742bdaa758988aa3117b4e35085a36f4d7614e51e1c1dba9d"
+    },
+    {
+      "id": "08_sailboat_Gaussian_10_s42",
+      "source": "data\\clean_gray\\08_sailboat.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 10,
+        "seed": 42
+      },
+      "input_png_sha256": "e6ef7d19181061c8af7bfd4956034bd9c90e18a26b953bade8e8f1c96489e864"
+    },
+    {
+      "id": "08_sailboat_Gaussian_20_s42",
+      "source": "data\\clean_gray\\08_sailboat.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 20,
+        "seed": 42
+      },
+      "input_png_sha256": "3c6e9a788d6e2207fc352feb8df37c80ec59a55cdf976612d3ae3f86432e6f3a"
+    },
+    {
+      "id": "08_sailboat_Gaussian_30_s42",
+      "source": "data\\clean_gray\\08_sailboat.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 30,
+        "seed": 42
+      },
+      "input_png_sha256": "0290b832b13ec7076f9302b53667ccda19675924dded93c488d45b487d011cf0"
+    },
+    {
+      "id": "08_sailboat_Saltandpepper_0.01_s42",
+      "source": "data\\clean_gray\\08_sailboat.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.01,
+        "seed": 42
+      },
+      "input_png_sha256": "8dbfd0e154ff0b1347da4bc11a645acef800e287fa7c03551d2ea3518a250ef9"
+    },
+    {
+      "id": "08_sailboat_Saltandpepper_0.05_s42",
+      "source": "data\\clean_gray\\08_sailboat.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.05,
+        "seed": 42
+      },
+      "input_png_sha256": "b9efc0808bb1dc06002be4dbba1b88b36cfab51ff92e880495aafc123c50073a"
+    },
+    {
+      "id": "08_sailboat_Saltandpepper_0.1_s42",
+      "source": "data\\clean_gray\\08_sailboat.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.1,
+        "seed": 42
+      },
+      "input_png_sha256": "c64ce5d73adcc186d93f02142dedd5503f9f20d8402b5a96fdf4e92940effba7"
+    },
+    {
+      "id": "08_sailboat_Poisson_10_s42",
+      "source": "data\\clean_gray\\08_sailboat.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Poisson",
+        "level": 10,
+        "seed": 42
+      },
+      "input_png_sha256": "155d90f8a3f054a095187c18a89bd55a9f18dc4722457219817f6d9fb039583e"
+    },
+    {
+      "id": "08_sailboat_Poisson_30_s42",
+      "source": "data\\clean_gray\\08_sailboat.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Poisson",
+        "level": 30,
+        "seed": 42
+      },
+      "input_png_sha256": "9f813ccc99c5f3a997d6d82ea3023065f46b2f61b7430953fcfca93ff26adb19"
+    },
+    {
+      "id": "08_sailboat_Poisson_100_s42",
+      "source": "data\\clean_gray\\08_sailboat.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Poisson",
+        "level": 100,
+        "seed": 42
+      },
+      "input_png_sha256": "bab9a17d746b61a9e4863f280555d647a99eb3b393b25624efa9f88b88c1be28"
+    },
+    {
+      "id": "09_flower_Gaussian_10_s42",
+      "source": "data\\clean_gray\\09_flower.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "calibration",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 10,
+        "seed": 42
+      },
+      "input_png_sha256": "7c746aa74b2b637d7884f21969663fc605b567d14ba8de73af97d5164daabf8f"
+    },
+    {
+      "id": "09_flower_Gaussian_20_s42",
+      "source": "data\\clean_gray\\09_flower.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "calibration",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 20,
+        "seed": 42
+      },
+      "input_png_sha256": "81d01c8f357c9cd6d048995e30af7fa3970a6b4cab4a58e763c546fdd5adbfa3"
+    },
+    {
+      "id": "09_flower_Gaussian_30_s42",
+      "source": "data\\clean_gray\\09_flower.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "calibration",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 30,
+        "seed": 42
+      },
+      "input_png_sha256": "f9e4268eda7e9b932dcf58e1e39c1d4173669efb6ab673faae5a29a4c14e2ea8"
+    },
+    {
+      "id": "09_flower_Saltandpepper_0.01_s42",
+      "source": "data\\clean_gray\\09_flower.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "calibration",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.01,
+        "seed": 42
+      },
+      "input_png_sha256": "5f318da922361966c2fa1c25b769d71422554d479c5a345eb0e71a7ac11b0cd5"
+    },
+    {
+      "id": "09_flower_Saltandpepper_0.05_s42",
+      "source": "data\\clean_gray\\09_flower.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "calibration",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.05,
+        "seed": 42
+      },
+      "input_png_sha256": "af7ff0dbf5c3f7624a5cc04cd29911e6b86b208dd842f562524cf2bc6c674530"
+    },
+    {
+      "id": "09_flower_Saltandpepper_0.1_s42",
+      "source": "data\\clean_gray\\09_flower.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "calibration",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.1,
+        "seed": 42
+      },
+      "input_png_sha256": "9aed2fd6d16ad99c22ae7ccac896b044329c30a5857916da2518a1a221d4895b"
+    },
+    {
+      "id": "09_flower_Poisson_10_s42",
+      "source": "data\\clean_gray\\09_flower.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "calibration",
+      "noise": {
+        "kind": "Poisson",
+        "level": 10,
+        "seed": 42
+      },
+      "input_png_sha256": "1745e9dc2a9a9766c72a513351ff7f414aead4f4c5f7dd11ddfff34ecc7c37ff"
+    },
+    {
+      "id": "09_flower_Poisson_30_s42",
+      "source": "data\\clean_gray\\09_flower.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "calibration",
+      "noise": {
+        "kind": "Poisson",
+        "level": 30,
+        "seed": 42
+      },
+      "input_png_sha256": "15d65c93fa6974738cffd95099dd983be6e5ac1821965cac25a0251353e62094"
+    },
+    {
+      "id": "09_flower_Poisson_100_s42",
+      "source": "data\\clean_gray\\09_flower.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "calibration",
+      "noise": {
+        "kind": "Poisson",
+        "level": 100,
+        "seed": 42
+      },
+      "input_png_sha256": "81fd1f5881467720dc5327a726f8f34e72f2b7d1f01a7428f5b2c65c081417bb"
+    },
+    {
+      "id": "10_several_buildings_Gaussian_10_s42",
+      "source": "data\\clean_gray\\10_several_buildings.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 10,
+        "seed": 42
+      },
+      "input_png_sha256": "3018a66f1b2b407695cd6ea341393ac0eb6de87e3f6c6c4264c4b3d9112f595e"
+    },
+    {
+      "id": "10_several_buildings_Gaussian_20_s42",
+      "source": "data\\clean_gray\\10_several_buildings.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 20,
+        "seed": 42
+      },
+      "input_png_sha256": "b396515e95e5a124c8f23302d92144503166beed92d45d1953ef8b82cb41695b"
+    },
+    {
+      "id": "10_several_buildings_Gaussian_30_s42",
+      "source": "data\\clean_gray\\10_several_buildings.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 30,
+        "seed": 42
+      },
+      "input_png_sha256": "fd96f976d5e1baf5d584a29c7e3251d0db2ce70a131425f3600025bd1503be79"
+    },
+    {
+      "id": "10_several_buildings_Saltandpepper_0.01_s42",
+      "source": "data\\clean_gray\\10_several_buildings.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.01,
+        "seed": 42
+      },
+      "input_png_sha256": "74434808a3f6d27d619cd5c51681927578f46776ad1f18f0033f151bb347b58a"
+    },
+    {
+      "id": "10_several_buildings_Saltandpepper_0.05_s42",
+      "source": "data\\clean_gray\\10_several_buildings.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.05,
+        "seed": 42
+      },
+      "input_png_sha256": "3f0adca048639042a416dfb53d93275a950c9975d2fb74509d74d21025e0b32d"
+    },
+    {
+      "id": "10_several_buildings_Saltandpepper_0.1_s42",
+      "source": "data\\clean_gray\\10_several_buildings.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.1,
+        "seed": 42
+      },
+      "input_png_sha256": "c7494ad1eb5499810da48fdb644a000cbce0d954e6ccb96c9ed15c5a0c8969fc"
+    },
+    {
+      "id": "10_several_buildings_Poisson_10_s42",
+      "source": "data\\clean_gray\\10_several_buildings.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Poisson",
+        "level": 10,
+        "seed": 42
+      },
+      "input_png_sha256": "895c1c86e77a37f3b02f01dcccf5176c6775d83f4250d9759f8b0e2620d42517"
+    },
+    {
+      "id": "10_several_buildings_Poisson_30_s42",
+      "source": "data\\clean_gray\\10_several_buildings.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Poisson",
+        "level": 30,
+        "seed": 42
+      },
+      "input_png_sha256": "27f52f3f0310490bdd3904e5c63cf7fd645145a86d5587c99dd459cd7783b8cf"
+    },
+    {
+      "id": "10_several_buildings_Poisson_100_s42",
+      "source": "data\\clean_gray\\10_several_buildings.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Poisson",
+        "level": 100,
+        "seed": 42
+      },
+      "input_png_sha256": "ddc938809165549645b592b11f0ac2b9888428c01d5627fa90c5878a6a9b2932"
+    },
+    {
+      "id": "11_several_small_boats_Gaussian_10_s42",
+      "source": "data\\clean_gray\\11_several_small_boats.png",
+      "crop_xywh": [
+        128,
+        256,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 10,
+        "seed": 42
+      },
+      "input_png_sha256": "3700a0c5ffa9dd582f63ada602e118325aff10d19c940ceb9cdd5154da0de154"
+    },
+    {
+      "id": "11_several_small_boats_Gaussian_20_s42",
+      "source": "data\\clean_gray\\11_several_small_boats.png",
+      "crop_xywh": [
+        128,
+        256,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 20,
+        "seed": 42
+      },
+      "input_png_sha256": "71b3ca6b6b5a943f777e3d389b2d925b1fd19ad42f891bd43235b97792e36be1"
+    },
+    {
+      "id": "11_several_small_boats_Gaussian_30_s42",
+      "source": "data\\clean_gray\\11_several_small_boats.png",
+      "crop_xywh": [
+        128,
+        256,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 30,
+        "seed": 42
+      },
+      "input_png_sha256": "18164d51685903ed1e9cc2ab7ffe92351106ec245e6def9df9473afc91d16546"
+    },
+    {
+      "id": "11_several_small_boats_Saltandpepper_0.01_s42",
+      "source": "data\\clean_gray\\11_several_small_boats.png",
+      "crop_xywh": [
+        128,
+        256,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.01,
+        "seed": 42
+      },
+      "input_png_sha256": "5348e2b73b528e78c6441e4acc5b5af1d0af945f480077fbd528fdf424ba4fc7"
+    },
+    {
+      "id": "11_several_small_boats_Saltandpepper_0.05_s42",
+      "source": "data\\clean_gray\\11_several_small_boats.png",
+      "crop_xywh": [
+        128,
+        256,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.05,
+        "seed": 42
+      },
+      "input_png_sha256": "3f50c9971c58932621948bb146fe8d9cdcd31f8cc47ffb2e46273b7695b045c1"
+    },
+    {
+      "id": "11_several_small_boats_Saltandpepper_0.1_s42",
+      "source": "data\\clean_gray\\11_several_small_boats.png",
+      "crop_xywh": [
+        128,
+        256,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.1,
+        "seed": 42
+      },
+      "input_png_sha256": "c055cbe695d9df429de2759367abee779dc7844d3e6f2d0d4f1cb4a29e5449ea"
+    },
+    {
+      "id": "11_several_small_boats_Poisson_10_s42",
+      "source": "data\\clean_gray\\11_several_small_boats.png",
+      "crop_xywh": [
+        128,
+        256,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Poisson",
+        "level": 10,
+        "seed": 42
+      },
+      "input_png_sha256": "c92b1eb2cf59dbc484be33373e1616f0a75260499e1e386740d2040c83185b2b"
+    },
+    {
+      "id": "11_several_small_boats_Poisson_30_s42",
+      "source": "data\\clean_gray\\11_several_small_boats.png",
+      "crop_xywh": [
+        128,
+        256,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Poisson",
+        "level": 30,
+        "seed": 42
+      },
+      "input_png_sha256": "6b21965411c400c451c991b5948995e1fb91dcf0e2bb035b58f6689cc8a64459"
+    },
+    {
+      "id": "11_several_small_boats_Poisson_100_s42",
+      "source": "data\\clean_gray\\11_several_small_boats.png",
+      "crop_xywh": [
+        128,
+        256,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Poisson",
+        "level": 100,
+        "seed": 42
+      },
+      "input_png_sha256": "fdf35654dabfa346266a576640e066f3ca61a9b724c8e6ca9ea9e521a72aa873"
+    },
+    {
+      "id": "12_couple_walking_Gaussian_10_s42",
+      "source": "data\\clean_gray\\12_couple_walking.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 10,
+        "seed": 42
+      },
+      "input_png_sha256": "4e07db52a4c28f48fcf0312e123c4094d334735ce320ddac3eb402c3a8e4460d"
+    },
+    {
+      "id": "12_couple_walking_Gaussian_20_s42",
+      "source": "data\\clean_gray\\12_couple_walking.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 20,
+        "seed": 42
+      },
+      "input_png_sha256": "90ad43a638bfaea89aad493eec4d28aa02bdee2f289d10e5f074822809126469"
+    },
+    {
+      "id": "12_couple_walking_Gaussian_30_s42",
+      "source": "data\\clean_gray\\12_couple_walking.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 30,
+        "seed": 42
+      },
+      "input_png_sha256": "4a99f5e9ed421230eb50cbcd8f0509d530bf582553516551f7b978855bb3a5cc"
+    },
+    {
+      "id": "12_couple_walking_Saltandpepper_0.01_s42",
+      "source": "data\\clean_gray\\12_couple_walking.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.01,
+        "seed": 42
+      },
+      "input_png_sha256": "3c4dd4da56d142f13a0333acef6f541035aece06d97d1c2c3328481509589a0b"
+    },
+    {
+      "id": "12_couple_walking_Saltandpepper_0.05_s42",
+      "source": "data\\clean_gray\\12_couple_walking.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.05,
+        "seed": 42
+      },
+      "input_png_sha256": "13a97cf0c8bf512d8448c782148563066826d1d9a705cbe1d67e16a7c536018e"
+    },
+    {
+      "id": "12_couple_walking_Saltandpepper_0.1_s42",
+      "source": "data\\clean_gray\\12_couple_walking.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.1,
+        "seed": 42
+      },
+      "input_png_sha256": "9d730e91d6310fa0df835e782747275c9f83bef492d9bd232c2b824d99269ad3"
+    },
+    {
+      "id": "12_couple_walking_Poisson_10_s42",
+      "source": "data\\clean_gray\\12_couple_walking.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Poisson",
+        "level": 10,
+        "seed": 42
+      },
+      "input_png_sha256": "378220c5def7747aed2272a10832d8be0b94f2a32a41447230252f7226371a2c"
+    },
+    {
+      "id": "12_couple_walking_Poisson_30_s42",
+      "source": "data\\clean_gray\\12_couple_walking.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Poisson",
+        "level": 30,
+        "seed": 42
+      },
+      "input_png_sha256": "6e34b41af6e90711a2c73796279645296630949ee8d5d4ad32771bae43c74323"
+    },
+    {
+      "id": "12_couple_walking_Poisson_100_s42",
+      "source": "data\\clean_gray\\12_couple_walking.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Poisson",
+        "level": 100,
+        "seed": 42
+      },
+      "input_png_sha256": "58124fcafaad6d988fb8299ec5ce16cca25fbd0c18d38649e3475476e7bec4de"
+    },
+    {
+      "id": "13_black_girl_Gaussian_10_s42",
+      "source": "data\\clean_gray\\13_black_girl.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 10,
+        "seed": 42
+      },
+      "input_png_sha256": "584d66d72560e503736c88587af4ecf60954a3c2162702a862e68443f9340979"
+    },
+    {
+      "id": "13_black_girl_Gaussian_20_s42",
+      "source": "data\\clean_gray\\13_black_girl.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 20,
+        "seed": 42
+      },
+      "input_png_sha256": "b42f2d815795dc665455cb760384e7dde098c8cd22a0bd2f81ff47e93281c4aa"
+    },
+    {
+      "id": "13_black_girl_Gaussian_30_s42",
+      "source": "data\\clean_gray\\13_black_girl.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Gaussian",
+        "level": 30,
+        "seed": 42
+      },
+      "input_png_sha256": "661dcd477f74d3cb6df275ebbc8e07ad592e2966d1caae93f6ee575d58209af1"
+    },
+    {
+      "id": "13_black_girl_Saltandpepper_0.01_s42",
+      "source": "data\\clean_gray\\13_black_girl.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.01,
+        "seed": 42
+      },
+      "input_png_sha256": "9718ad740a41f29f460bd6030c7ffdc4821821b84fa01459d0b93ce19e8ccf55"
+    },
+    {
+      "id": "13_black_girl_Saltandpepper_0.05_s42",
+      "source": "data\\clean_gray\\13_black_girl.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.05,
+        "seed": 42
+      },
+      "input_png_sha256": "020fda897fed70347c04372253ae2975b4de80f1ed608d5cec27c42852d0b3cc"
+    },
+    {
+      "id": "13_black_girl_Saltandpepper_0.1_s42",
+      "source": "data\\clean_gray\\13_black_girl.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Salt and pepper",
+        "level": 0.1,
+        "seed": 42
+      },
+      "input_png_sha256": "3b4bed4892b90cbb0f2adde5da6e3f37565f35f932d718b64b83becb256cff91"
+    },
+    {
+      "id": "13_black_girl_Poisson_10_s42",
+      "source": "data\\clean_gray\\13_black_girl.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Poisson",
+        "level": 10,
+        "seed": 42
+      },
+      "input_png_sha256": "ffdafe5441013718d850cfe31ed645182653fb73bdd3b51a00b9639ad6c72b73"
+    },
+    {
+      "id": "13_black_girl_Poisson_30_s42",
+      "source": "data\\clean_gray\\13_black_girl.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Poisson",
+        "level": 30,
+        "seed": 42
+      },
+      "input_png_sha256": "4753d7be35c0bffa05119bb5684c876108230f87d874aba4fa991ff9a0ebb96c"
+    },
+    {
+      "id": "13_black_girl_Poisson_100_s42",
+      "source": "data\\clean_gray\\13_black_girl.png",
+      "crop_xywh": [
+        256,
+        128,
+        256,
+        256
+      ],
+      "split": "test",
+      "noise": {
+        "kind": "Poisson",
+        "level": 100,
+        "seed": 42
+      },
+      "input_png_sha256": "4b22137244ce341113f6ccdd4136df632c046a19bcd5fcd40e9f088bf908f924"
+    }
+  ]
+}

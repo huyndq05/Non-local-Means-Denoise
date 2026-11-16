@@ -1,0 +1,332 @@
+[
+    {
+        "id": "01_blonde_white_woman_Gaussian_10_s42",
+        "image": "01",
+        "split": "test",
+        "sigma": 10,
+        "MSE_Python_output": 22.932998657226562,
+        "PSNR_Python_output": 34.52619515246552,
+        "MSE_Fiji_output": 24.337646484375,
+        "PSNR_Fiji_output": 34.26801782383406
+    },
+    {
+        "id": "01_blonde_white_woman_Gaussian_20_s42",
+        "image": "01",
+        "split": "test",
+        "sigma": 20,
+        "MSE_Python_output": 42.720794677734375,
+        "PSNR_Python_output": 31.82441038173605,
+        "MSE_Fiji_output": 35.89683532714844,
+        "PSNR_Fiji_output": 32.580241980984596
+    },
+    {
+        "id": "01_blonde_white_woman_Gaussian_30_s42",
+        "image": "01",
+        "split": "test",
+        "sigma": 30,
+        "MSE_Python_output": 65.22735595703125,
+        "PSNR_Python_output": 29.98650586462308,
+        "MSE_Fiji_output": 55.06858825683594,
+        "PSNR_Fiji_output": 30.721764178553922
+    },
+    {
+        "id": "02_old_building_with_read_door_and_window_Gaussian_10_s42",
+        "image": "02",
+        "split": "illustration",
+        "sigma": 10,
+        "MSE_Python_output": 72.82936096191406,
+        "PSNR_Python_output": 29.507738615951176,
+        "MSE_Fiji_output": 82.19866943359375,
+        "PSNR_Fiji_output": 28.982155732831515
+    },
+    {
+        "id": "02_old_building_with_read_door_and_window_Gaussian_20_s42",
+        "image": "02",
+        "split": "illustration",
+        "sigma": 20,
+        "MSE_Python_output": 194.85140991210938,
+        "PSNR_Python_output": 25.23376808245828,
+        "MSE_Fiji_output": 182.39479064941406,
+        "PSNR_Fiji_output": 25.520679305187222
+    },
+    {
+        "id": "02_old_building_with_read_door_and_window_Gaussian_30_s42",
+        "image": "02",
+        "split": "illustration",
+        "sigma": 30,
+        "MSE_Python_output": 282.1977233886719,
+        "PSNR_Python_output": 23.625268550772404,
+        "MSE_Fiji_output": 269.3251953125,
+        "PSNR_Fiji_output": 23.82803377403102
+    },
+    {
+        "id": "03_white_roman_statue_Gaussian_10_s42",
+        "image": "03",
+        "split": "test",
+        "sigma": 10,
+        "MSE_Python_output": 41.813201904296875,
+        "PSNR_Python_output": 31.9176693533797,
+        "MSE_Fiji_output": 46.45661926269531,
+        "PSNR_Fiji_output": 31.460327586963768
+    },
+    {
+        "id": "03_white_roman_statue_Gaussian_20_s42",
+        "image": "03",
+        "split": "test",
+        "sigma": 20,
+        "MSE_Python_output": 79.93038940429688,
+        "PSNR_Python_output": 29.103684321001424,
+        "MSE_Fiji_output": 77.40763854980469,
+        "PSNR_Fiji_output": 29.24296542092695
+    },
+    {
+        "id": "03_white_roman_statue_Gaussian_30_s42",
+        "image": "03",
+        "split": "test",
+        "sigma": 30,
+        "MSE_Python_output": 118.01492309570312,
+        "PSNR_Python_output": 27.411434331521733,
+        "MSE_Fiji_output": 125.98516845703125,
+        "PSNR_Fiji_output": 27.12760939848772
+    },
+    {
+        "id": "04_single_plane_Gaussian_10_s42",
+        "image": "04",
+        "split": "test",
+        "sigma": 10,
+        "MSE_Python_output": 24.789581298828125,
+        "PSNR_Python_output": 34.188111693620556,
+        "MSE_Fiji_output": 40.08869934082031,
+        "PSNR_Fiji_output": 32.10058394871017
+    },
+    {
+        "id": "04_single_plane_Gaussian_20_s42",
+        "image": "04",
+        "split": "test",
+        "sigma": 20,
+        "MSE_Python_output": 75.12831115722656,
+        "PSNR_Python_output": 29.37276734617545,
+        "MSE_Fiji_output": 117.13729858398438,
+        "PSNR_Fiji_output": 27.44385156743641
+    },
+    {
+        "id": "04_single_plane_Gaussian_30_s42",
+        "image": "04",
+        "split": "test",
+        "sigma": 30,
+        "MSE_Python_output": 143.99362182617188,
+        "PSNR_Python_output": 26.547371053493674,
+        "MSE_Fiji_output": 165.710205078125,
+        "PSNR_Fiji_output": 25.937311060837935
+    },
+    {
+        "id": "05_close-up_view_of_latch_Gaussian_10_s42",
+        "image": "05",
+        "split": "test",
+        "sigma": 10,
+        "MSE_Python_output": 35.49176025390625,
+        "PSNR_Python_output": 32.62952821661186,
+        "MSE_Fiji_output": 41.96405029296875,
+        "PSNR_Fiji_output": 31.90202962018578
+    },
+    {
+        "id": "05_close-up_view_of_latch_Gaussian_20_s42",
+        "image": "05",
+        "split": "test",
+        "sigma": 20,
+        "MSE_Python_output": 68.40812683105469,
+        "PSNR_Python_output": 29.779726622438922,
+        "MSE_Fiji_output": 71.28660583496094,
+        "PSNR_Fiji_output": 29.600724237007043
+    },
+    {
+        "id": "05_close-up_view_of_latch_Gaussian_30_s42",
+        "image": "05",
+        "split": "test",
+        "sigma": 30,
+        "MSE_Python_output": 97.51902770996094,
+        "PSNR_Python_output": 28.239909982648015,
+        "MSE_Fiji_output": 102.70460510253906,
+        "PSNR_Fiji_output": 28.01490443796601
+    },
+    {
+        "id": "07_motor_racers_Gaussian_10_s42",
+        "image": "07",
+        "split": "test",
+        "sigma": 10,
+        "MSE_Python_output": 69.60647583007812,
+        "PSNR_Python_output": 29.70430714843007,
+        "MSE_Fiji_output": 95.79316711425781,
+        "PSNR_Fiji_output": 28.31745828724705
+    },
+    {
+        "id": "07_motor_racers_Gaussian_20_s42",
+        "image": "07",
+        "split": "test",
+        "sigma": 20,
+        "MSE_Python_output": 179.23626708984375,
+        "PSNR_Python_output": 25.596544704783003,
+        "MSE_Fiji_output": 224.6693115234375,
+        "PSNR_Fiji_output": 24.615366064115708
+    },
+    {
+        "id": "07_motor_racers_Gaussian_30_s42",
+        "image": "07",
+        "split": "test",
+        "sigma": 30,
+        "MSE_Python_output": 274.5221862792969,
+        "PSNR_Python_output": 23.745029119386047,
+        "MSE_Fiji_output": 316.2971496582031,
+        "PSNR_Fiji_output": 23.12985082620514
+    },
+    {
+        "id": "08_sailboat_Gaussian_10_s42",
+        "image": "08",
+        "split": "test",
+        "sigma": 10,
+        "MSE_Python_output": 84.91764831542969,
+        "PSNR_Python_output": 28.840824024320515,
+        "MSE_Fiji_output": 90.82107543945312,
+        "PSNR_Fiji_output": 28.548937206619712
+    },
+    {
+        "id": "08_sailboat_Gaussian_20_s42",
+        "image": "08",
+        "split": "test",
+        "sigma": 20,
+        "MSE_Python_output": 209.31593322753906,
+        "PSNR_Python_output": 24.922780725701866,
+        "MSE_Fiji_output": 196.521484375,
+        "PSNR_Fiji_output": 25.19670325059935
+    },
+    {
+        "id": "08_sailboat_Gaussian_30_s42",
+        "image": "08",
+        "split": "test",
+        "sigma": 30,
+        "MSE_Python_output": 288.9402313232422,
+        "PSNR_Python_output": 23.52272344723847,
+        "MSE_Fiji_output": 286.08384704589844,
+        "PSNR_Fiji_output": 23.565870236389305
+    },
+    {
+        "id": "10_several_buildings_Gaussian_10_s42",
+        "image": "10",
+        "split": "test",
+        "sigma": 10,
+        "MSE_Python_output": 58.183441162109375,
+        "PSNR_Python_output": 30.482809575780394,
+        "MSE_Fiji_output": 69.67597961425781,
+        "PSNR_Fiji_output": 29.699972774463177
+    },
+    {
+        "id": "10_several_buildings_Gaussian_20_s42",
+        "image": "10",
+        "split": "test",
+        "sigma": 20,
+        "MSE_Python_output": 147.29534912109375,
+        "PSNR_Python_output": 26.44891326740373,
+        "MSE_Fiji_output": 151.30763244628906,
+        "PSNR_Fiji_output": 26.332195250740526
+    },
+    {
+        "id": "10_several_buildings_Gaussian_30_s42",
+        "image": "10",
+        "split": "test",
+        "sigma": 30,
+        "MSE_Python_output": 229.4944305419922,
+        "PSNR_Python_output": 24.523082104901846,
+        "MSE_Fiji_output": 223.4553985595703,
+        "PSNR_Fiji_output": 24.638895094288845
+    },
+    {
+        "id": "11_several_small_boats_Gaussian_10_s42",
+        "image": "11",
+        "split": "test",
+        "sigma": 10,
+        "MSE_Python_output": 24.628952026367188,
+        "PSNR_Python_output": 34.216344280726055,
+        "MSE_Fiji_output": 27.639373779296875,
+        "PSNR_Fiji_output": 33.71552161792259
+    },
+    {
+        "id": "11_several_small_boats_Gaussian_20_s42",
+        "image": "11",
+        "split": "test",
+        "sigma": 20,
+        "MSE_Python_output": 52.3280029296875,
+        "PSNR_Python_output": 30.94346200429159,
+        "MSE_Fiji_output": 45.26408386230469,
+        "PSNR_Fiji_output": 31.573266261221203
+    },
+    {
+        "id": "11_several_small_boats_Gaussian_30_s42",
+        "image": "11",
+        "split": "test",
+        "sigma": 30,
+        "MSE_Python_output": 80.69096374511719,
+        "PSNR_Python_output": 29.06255458306473,
+        "MSE_Fiji_output": 75.26400756835938,
+        "PSNR_Fiji_output": 29.3649302147234
+    },
+    {
+        "id": "12_couple_walking_Gaussian_10_s42",
+        "image": "12",
+        "split": "test",
+        "sigma": 10,
+        "MSE_Python_output": 43.04002380371094,
+        "PSNR_Python_output": 31.792078580186516,
+        "MSE_Fiji_output": 46.7845458984375,
+        "PSNR_Fiji_output": 31.429779423967528
+    },
+    {
+        "id": "12_couple_walking_Gaussian_20_s42",
+        "image": "12",
+        "split": "test",
+        "sigma": 20,
+        "MSE_Python_output": 78.03396606445312,
+        "PSNR_Python_output": 29.2079668044046,
+        "MSE_Fiji_output": 76.58616638183594,
+        "PSNR_Fiji_output": 29.289300299637063
+    },
+    {
+        "id": "12_couple_walking_Gaussian_30_s42",
+        "image": "12",
+        "split": "test",
+        "sigma": 30,
+        "MSE_Python_output": 104.92626953125,
+        "PSNR_Python_output": 27.921961283064604,
+        "MSE_Fiji_output": 100.35800170898438,
+        "PSNR_Fiji_output": 28.115283556486276
+    },
+    {
+        "id": "13_black_girl_Gaussian_10_s42",
+        "image": "13",
+        "split": "test",
+        "sigma": 10,
+        "MSE_Python_output": 42.20631408691406,
+        "PSNR_Python_output": 31.877029343616982,
+        "MSE_Fiji_output": 45.62957763671875,
+        "PSNR_Fiji_output": 31.538339120578037
+    },
+    {
+        "id": "13_black_girl_Gaussian_20_s42",
+        "image": "13",
+        "split": "test",
+        "sigma": 20,
+        "MSE_Python_output": 83.466552734375,
+        "PSNR_Python_output": 28.915678838630704,
+        "MSE_Fiji_output": 84.71231079101562,
+        "PSNR_Fiji_output": 28.851338322361734
+    },
+    {
+        "id": "13_black_girl_Gaussian_30_s42",
+        "image": "13",
+        "split": "test",
+        "sigma": 30,
+        "MSE_Python_output": 119.87237548828125,
+        "PSNR_Python_output": 27.343612491224306,
+        "MSE_Fiji_output": 122.79484558105469,
+        "PSNR_Fiji_output": 27.239002235634693
+    }
+]

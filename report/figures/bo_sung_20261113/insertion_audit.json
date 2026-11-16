@@ -1,0 +1,84 @@
+{
+  "source": "E:\\Git\\Non-local-Means-Denoise\\report\\ban_nop_2026\\01_BaoCao_NLM_HoanChinh.docx",
+  "output": "E:\\Git\\Non-local-Means-Denoise\\report\\ban_nop_2026\\01_BaoCao_NLM_HoanChinh_CoHinh.docx",
+  "inserted": [
+    {
+      "number": "2.1",
+      "path": "report\\figures\\bo_sung_20261113\\fig_2_1.png",
+      "caption": "Hình 2.1. Quy trình đối chiếu dùng chung PNG nhiễu; Fiji là nhánh cần thu minh chứng thực hành."
+    },
+    {
+      "number": "2.2",
+      "path": "report\\figures\\bo_sung_20261113\\fig_2_2.png",
+      "caption": "Hình 2.2. Crop ảnh 10 với Gaussian σ = 10, 20, 30 và histogram phần dư sau clip, seed 42."
+    },
+    {
+      "number": "2.3",
+      "path": "report\\figures\\bo_sung_20261113\\fig_2_3.png",
+      "caption": "Hình 2.3. Cùng crop ảnh 10: sạch, muối tiêu p = 0,05, Median và NLM tự cài; seed 42."
+    },
+    {
+      "number": "2.4",
+      "path": "report\\figures\\bo_sung_20261113\\fig_2_4.png",
+      "caption": "Hình 2.4. Poisson tại ba peak và phương sai phần dư theo nhóm cường độ; đường lý thuyết trước clip được vẽ nét chấm."
+    },
+    {
+      "number": "3.1",
+      "path": "report\\figures\\bo_sung_20261113\\fig_3_1.png",
+      "caption": "Hình 3.1. So sánh cùng crop ảnh 10: Mean 3×3, Gaussian s=1, Median 3×3 và NLM P5/r5/h8; hai loại nhiễu, seed 42."
+    },
+    {
+      "number": "3.2",
+      "path": "report\\figures\\bo_sung_20261113\\fig_3_2.png",
+      "caption": "Hình 3.2. Bilateral trên ảnh 10, σ không gian=3 pixel, σ cường độ=10 và 40; cùng Gaussian20, seed42. Hai cấu hình được chạy bổ sung."
+    },
+    {
+      "number": "4.1",
+      "path": "report\\figures\\bo_sung_20261113\\fig_4_1.png",
+      "caption": "Hình 4.1. Patch 5×5 và bản đồ trọng số tại tâm (x=64,y=64), ảnh02 Gaussian20. Dùng σ20, h8, search21×21 và self weight1."
+    },
+    {
+      "number": "4.2",
+      "path": "report\\figures\\bo_sung_20261113\\fig_4_2.png",
+      "caption": "Hình 4.2. Khảo sát bổ sung σ giả định, giữ h8/P5/r5 trên ba crop hiệu chỉnh Gaussian20, seed42; thanh sai số là SD qua ba ảnh."
+    },
+    {
+      "number": "4.3",
+      "path": "report\\figures\\bo_sung_20261113\\fig_4_3.png",
+      "caption": "Hình 4.3. Chất lượng và chi phí theo P hoặc r, lấy từ CSV khảo sát ba crop hiệu chỉnh. Mỗi thời gian là trung vị ba lượt sau làm nóng; đường biểu diễn trung bình qua ảnh."
+    },
+    {
+      "number": "6.2",
+      "path": "report\\figures\\bo_sung_20261113\\fig_6_2.png",
+      "caption": "Hình 6.2. PSNR theo h/σ, P và r trên ảnh02/06/09, Gaussian20 seed42; thay từng biến, vùng tô biểu diễn ±1 SD qua ba ảnh."
+    },
+    {
+      "number": "6.3",
+      "path": "report\\figures\\bo_sung_20261113\\fig_6_3.png",
+      "caption": "Hình 6.3. Cùng crop ảnh10 Gaussian20 và PSNR riêng ảnh; cấu hình đúng baseline. Các số này không phải trung bình10 ảnh."
+    },
+    {
+      "number": "6.4",
+      "path": "report\\figures\\bo_sung_20261113\\fig_6_4.png",
+      "caption": "Hình 6.4. Muối tiêu0,05 và Poisson30 trên ảnh10. Phần dư và sai số tính từ Median (hàng trên) hoặc Anscombe+NLM (hàng dưới); dùng chung thang hiển thị, không dùng ảnh đã đổi thang để tính metric."
+    }
+  ],
+  "pending": [
+    {
+      "number": "5.1",
+      "text": "[CHÈN HÌNH 5.1] Hộp thoại plugin và thông tin phiên bản trên máy nhóm"
+    },
+    {
+      "number": "5.2",
+      "text": "[CHÈN HÌNH 5.2] Ảnh kết quả Fiji tại hai sigma nằm hai phía một ngưỡng"
+    },
+    {
+      "number": "5.3",
+      "text": "[CHÈN HÌNH 5.3] Giao diện webapp và cấu hình đã lưu"
+    },
+    {
+      "number": "6.1",
+      "text": "[CHÈN HÌNH 6.1] Fiji đo Mean của ảnh sai số bình phương và bảng PSNR đối chiếu Python"
+    }
+  ]
+}

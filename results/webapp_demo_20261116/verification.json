@@ -1,0 +1,14 @@
+{
+  "source_gray.png": {
+    "identical": true,
+    "sha256": "c357d16b81f3a849f0cbc93f67e5ec8f68b326d3b36dc4b6592141c38a2ccd54"
+  },
+  "noisy_input.png": {
+    "identical": true,
+    "sha256": "638f8e552e5bd1cf9b8e522d25dde5122a497dc39e8e3967a83155e60dd7cad1"
+  },
+  "01_result.png": {
+    "identical": true,
+    "sha256": "71a5512fab0dc7bb14b8ea0eb6e382f75a4b5524bc1f7c28a4d873a52ea9453d"
+  }
+}

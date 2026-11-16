@@ -1,0 +1,99 @@
+{
+  "schema_version": 3,
+  "created_utc": "2026-11-15T23:24:12.087016+00:00",
+  "source_name": "02_old_building_with_read_door_and_window.png",
+  "parameters": {
+    "sigma": 20.0,
+    "h": 8.0,
+    "patch": 5,
+    "radius": 5,
+    "kernel": 3,
+    "gaussian": 1.0,
+    "color": 20.0,
+    "spatial": 3.0,
+    "peak": 30.0,
+    "anscombe_h": 0.8
+  },
+  "noise": {
+    "kind": "Gaussian",
+    "level": 20,
+    "seed": 42
+  },
+  "ground_truth": true,
+  "shape": [
+    256,
+    256
+  ],
+  "dtype": "uint8",
+  "color_mode": "grayscale",
+  "source_file": "source_gray.png",
+  "files": {
+    "NLM tự cài đặt": "01_result.png",
+    "NLM scikit-image": "02_result.png",
+    "Mean": "03_result.png",
+    "Gaussian": "04_result.png",
+    "Median": "05_result.png",
+    "Bilateral": "06_result.png"
+  },
+  "parameter_units": "sigma, h, bilateral color: equivalent 0..255; spatial: pixels",
+  "input_png_sha256": "638f8e552e5bd1cf9b8e522d25dde5122a497dc39e8e3967a83155e60dd7cad1",
+  "source_png_sha256": "c357d16b81f3a849f0cbc93f67e5ec8f68b326d3b36dc4b6592141c38a2ccd54",
+  "fiji": null,
+  "fiji_png_sha256": null,
+  "timing": {
+    "repeats": 3,
+    "warmup": true,
+    "excludes": "I/O, metrics, quantization",
+    "statistic": "median",
+    "runs": {
+      "NLM tự cài đặt": [
+        0.14596910000545904,
+        0.18678270000964403,
+        0.1618165000109002
+      ],
+      "NLM scikit-image": [
+        0.042395199998281896,
+        0.042050299991387874,
+        0.04221230000257492
+      ],
+      "Mean": [
+        0.001117900013923645,
+        0.0008234000415541232,
+        0.0006623999797739089
+      ],
+      "Gaussian": [
+        0.0008378000347875059,
+        0.0008482999983243644,
+        0.0008315000450238585
+      ],
+      "Median": [
+        0.009781699976883829,
+        0.011134600033983588,
+        0.010266599943861365
+      ],
+      "Bilateral": [
+        0.23765590001130477,
+        0.23482239997247234,
+        0.2532148999744095
+      ]
+    }
+  },
+  "metric_protocol": {
+    "range": 255.0,
+    "output": "rounded clipped uint8",
+    "MSE": "mean over pixels and channels, native intensity units squared",
+    "SSIM": "7x7 uniform, sample covariance, valid interior mean; RGB: channel mean"
+  },
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "scikit-image": "0.26.0",
+    "PyWavelets": "1.10.0",
+    "Pillow": "12.3.0",
+    "streamlit": "1.67.0",
+    "pypng": "0.20220715.0",
+    "tifffile": "2026.11.8"
+  }
+}

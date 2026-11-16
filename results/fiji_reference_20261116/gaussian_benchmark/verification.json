@@ -1,0 +1,45 @@
+{
+  "cases": 33,
+  "test_cases": 30,
+  "illustration_cases": 3,
+  "independent_MSE_PSNR_match_tolerance": 1e-08,
+  "SSIM_computed_by": "Python scikit-image on saved output PNGs for both methods",
+  "summary": [
+    {
+      "sigma": 10,
+      "n": 10,
+      "python_psnr": 32.01748973691382,
+      "python_sd": 1.9462933517977359,
+      "fiji_psnr": 31.298096741049186,
+      "fiji_sd": 1.965552069525158,
+      "python_ssim": 0.8845814554712564,
+      "fiji_ssim": 0.8687113672605606,
+      "delta": -0.7193929958646301,
+      "fiji_wins": 0
+    },
+    {
+      "sigma": 20,
+      "n": 10,
+      "python_psnr": 28.611593501656735,
+      "python_sd": 2.2550942515418377,
+      "fiji_psnr": 28.47259526550306,
+      "fiji_sd": 2.5908564040220674,
+      "python_ssim": 0.7903492877586323,
+      "fiji_ssim": 0.7882817648199432,
+      "delta": -0.1389982361536756,
+      "fiji_wins": 5
+    },
+    {
+      "sigma": 30,
+      "n": 10,
+      "python_psnr": 26.830418426116648,
+      "python_sd": 2.2257780060929773,
+      "fiji_psnr": 26.78554212395732,
+      "fiji_sd": 2.4677300048163153,
+      "python_ssim": 0.7101794245195528,
+      "fiji_ssim": 0.7150666290897056,
+      "delta": -0.04487630215932583,
+      "fiji_wins": 5
+    }
+  ]
+}

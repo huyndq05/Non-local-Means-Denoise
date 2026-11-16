@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root {--bg:#f5f7fa;--surface:#fff;--text:#172b42;--accent:#087f8c;--line:rgba(127,127,127,.3)}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,sans-serif;color:var(--text);background:transparent;font-size:14px}
+.toolbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+button,input{font:inherit}button{padding:7px 12px;border:1px solid var(--line);border-radius:7px;background:var(--surface);color:var(--text);cursor:pointer;min-height:36px}
+button:hover{border-color:var(--accent)}button:focus-visible,canvas:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+label{display:flex;align-items:center;gap:6px}input{accent-color:var(--accent)}input[type=range]{width:125px}
+output{font-variant-numeric:tabular-nums;min-width:70px}.separator{width:1px;height:24px;background:var(--line);margin:0 3px}
+.panels{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+.panel{border:1px solid var(--line);border-radius:11px;overflow:hidden;min-width:0;background:var(--surface)}
+.title{font-weight:650;padding:11px 13px;border-bottom:1px solid var(--line);line-height:1.4;overflow-wrap:anywhere}
+canvas{display:block;width:100%;height:350px;cursor:crosshair;touch-action:none;background:var(--bg)}canvas.dragging{cursor:grabbing}
+.help{font-size:12px;line-height:1.6;margin:9px 0 2px}.status{font-size:12px;line-height:1.5;min-height:20px;font-variant-numeric:tabular-nums}
+@media(max-width:640px){.panels{grid-template-columns:1fr;gap:10px}canvas{height:260px}.separator{display:none}.toolbar{gap:6px}}
+</style></head><body>
+<div id="root">
+ <div class="toolbar" aria-label="Điều khiển cả hai ảnh">
+  <button id="out" aria-label="Thu nhỏ cả hai ảnh">−</button>
+  <input id="zoom" type="range" min="1" max="64" step="0.1" value="1" aria-label="Mức phóng đại đồng bộ">
+  <button id="in" aria-label="Phóng to cả hai ảnh">+</button><output id="zoomLabel">1.0×</output>
+  <button id="fit">Vừa khung</button><button id="actual">1:1 pixel</button>
+  <span class="separator"></span><label><input id="lens" type="checkbox" checked>Kính lúp đồng bộ</label>
+ </div>
+ <div class="panels">
+  <div class="panel"><div class="title" id="leftTitle"></div><canvas id="left" tabindex="0" aria-label="Ảnh bên trái. Cuộn để phóng to, kéo để di chuyển; đồng bộ với ảnh phải."></canvas></div>
+  <div class="panel"><div class="title" id="rightTitle"></div><canvas id="right" tabindex="0" aria-label="Ảnh bên phải. Cuộn để phóng to, kéo để di chuyển; đồng bộ với ảnh trái."></canvas></div>
+ </div>
+ <div class="help">Rê chuột trên ảnh bất kỳ để soi cùng vùng ở cả hai ảnh. Cuộn chuột để zoom tại con trỏ; giữ và kéo để di chuyển. Nhấp đúp để vừa khung. Có thể dùng phím + / − và phím mũi tên khi ảnh được chọn.</div>
+ <div class="status" id="status" role="status">Đang tải ảnh…</div>
+</div>
+<script src="viewport.js"></script><script src="viewer.js"></script>
+</body></html>

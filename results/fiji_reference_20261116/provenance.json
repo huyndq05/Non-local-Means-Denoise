@@ -1,0 +1,24 @@
+{
+  "source_zip": "results/baseline_v2/02_old_building_with_read_door_and_window_Gaussian_20_s42.zip",
+  "image": "02 old building with red door and window",
+  "subset": "calibration illustration, not evaluation mean",
+  "width": 256,
+  "height": 256,
+  "noise": "Gaussian",
+  "sigma": 20,
+  "seed": 42,
+  "imagej": "1.54t",
+  "plugin_jar": "ij_nl_means-1.4.7.jar",
+  "plugin_sha256": "93674713267c4ac080375e2ea93ee911bd98a0b9cee43e3204811bf91ce575ff",
+  "NLM": {
+    "sigma": 20,
+    "smoothing_factor": 1,
+    "auto_estimate_sigma": false
+  },
+  "mean_radius": 1,
+  "median_radius": 1,
+  "gaussian_sigma": 1,
+  "measurement": "Fiji FloatProcessor squared difference mean; Python NumPy float64 on identical saved PNGs",
+  "screenshots": "Actual Fiji ScreenGrabber captures. Comparison is a Fiji Montage with 256x256 source pixels per tile at native scale. Error contrast changes display only.",
+  "input_png_sha256": "638f8e552e5bd1cf9b8e522d25dde5122a497dc39e8e3967a83155e60dd7cad1"
+}

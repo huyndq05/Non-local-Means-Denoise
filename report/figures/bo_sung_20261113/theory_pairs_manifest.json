@@ -1,0 +1,82 @@
+{
+  "2_1": {
+    "path": "report\\figures\\bo_sung_20261113\\theory_2_1.png",
+    "source": "results\\baseline_v2\\02_old_building_with_read_door_and_window_Gaussian_20_s42.zip",
+    "shape_each": [
+      256,
+      256
+    ],
+    "left": "Ảnh gốc",
+    "right": "Nhiễu Gaussian"
+  },
+  "2_2": {
+    "path": "report\\figures\\bo_sung_20261113\\theory_2_2.png",
+    "source": "results\\baseline_v2\\02_old_building_with_read_door_and_window_Saltandpepper_0.05_s42.zip",
+    "shape_each": [
+      256,
+      256
+    ],
+    "left": "Ảnh gốc",
+    "right": "Nhiễu muối tiêu"
+  },
+  "2_3": {
+    "path": "report\\figures\\bo_sung_20261113\\theory_2_3.png",
+    "source": "results\\baseline_v2\\02_old_building_with_read_door_and_window_Poisson_30_s42.zip",
+    "shape_each": [
+      256,
+      256
+    ],
+    "left": "Ảnh gốc",
+    "right": "Nhiễu Poisson"
+  },
+  "2_4": {
+    "path": "report\\figures\\bo_sung_20261113\\theory_2_4.png",
+    "source": "results\\baseline_v2\\02_old_building_with_read_door_and_window_Gaussian_20_s42.zip",
+    "shape_each": [
+      256,
+      256
+    ],
+    "left": "Ảnh nhiễu Gaussian",
+    "right": "Lọc trung bình"
+  },
+  "2_5": {
+    "path": "report\\figures\\bo_sung_20261113\\theory_2_5.png",
+    "source": "results\\baseline_v2\\02_old_building_with_read_door_and_window_Gaussian_20_s42.zip",
+    "shape_each": [
+      256,
+      256
+    ],
+    "left": "Ảnh nhiễu Gaussian",
+    "right": "Lọc Gaussian"
+  },
+  "2_7": {
+    "path": "report\\figures\\bo_sung_20261113\\theory_2_7.png",
+    "source": "results\\baseline_v2\\02_old_building_with_read_door_and_window_Gaussian_20_s42.zip",
+    "shape_each": [
+      256,
+      256
+    ],
+    "left": "Ảnh nhiễu Gaussian",
+    "right": "Lọc bilateral"
+  },
+  "2_8": {
+    "path": "report\\figures\\bo_sung_20261113\\theory_2_8.png",
+    "source": "results\\baseline_v2\\02_old_building_with_read_door_and_window_Gaussian_20_s42.zip",
+    "shape_each": [
+      256,
+      256
+    ],
+    "left": "Ảnh nhiễu Gaussian",
+    "right": "Lọc Non-Local Means"
+  },
+  "2_6": {
+    "path": "report\\figures\\bo_sung_20261113\\theory_2_6.png",
+    "source": "results\\baseline_v2\\02_old_building_with_read_door_and_window_Saltandpepper_0.05_s42.zip",
+    "shape_each": [
+      256,
+      256
+    ],
+    "left": "Ảnh nhiễu muối tiêu",
+    "right": "Lọc trung vị"
+  }
+}

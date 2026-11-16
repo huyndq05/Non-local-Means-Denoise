@@ -1,0 +1,14 @@
+{
+  "url": "http://127.0.0.1:8501/",
+  "result_status": "Hai ảnh đồng bộ · 256 × 256 px · 383% kích thước pixel · Con trỏ: x=130, y=118",
+  "zoom": "2.80×",
+  "source": "02_old_building_with_read_door_and_window.png",
+  "noise": {
+    "Gaussian_sigma": 20,
+    "seed": 42
+  },
+  "crop": 256,
+  "mode": "grayscale",
+  "methods": "default six methods",
+  "screenshots": "actual Chromium rendered Streamlit UI; no DOM styling modifications"
+}
