@@ -1,9 +1,11 @@
 """Controlled one-factor NLM study on three fixed calibration crops."""
 import sys
 from pathlib import Path
+import pandas as pd
+
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
-import pandas as pd
+
 from nlm_lab import load_image, noise, metrics
 from experiment import DEFAULTS, benchmark, csv_bytes
 

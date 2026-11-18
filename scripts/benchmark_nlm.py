@@ -4,10 +4,12 @@ import hashlib
 import json
 import sys
 from pathlib import Path
-ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / 'src'))
 import numpy as np
 import pandas as pd
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'src'))
+
 from nlm_lab import load_image, noise, metrics, png
 from experiment import METHODS, DEFAULTS, benchmark, package, csv_bytes
 
@@ -24,9 +26,15 @@ def main():
     args=parser.parse_args()
     if args.size<7 or not 0<=args.radius<=20 or not 1<=args.repeats<=20:
         parser.error('size >= 7, radius 0..20, repeats 1..20')
-    out=Path(args.output); out.mkdir(parents=True,exist_ok=True)
+    inp=Path(args.input)
+    if not inp.is_absolute() and not inp.exists() and (ROOT/inp).exists():
+        inp=ROOT/inp
+    out=Path(args.output)
+    if not out.is_absolute() and Path.cwd()!=ROOT and not out.exists():
+        out=ROOT/out
+    out.mkdir(parents=True,exist_ok=True)
     rows=[]; manifest=[]
-    files=sorted(Path(args.input).glob('*.png'))[:args.max_images]
+    files=sorted(inp.glob('*.png'))[:args.max_images]
     if not files: parser.error('No input images')
     conditions=[('Gaussian',v) for v in [10,20,30]]+ [('Salt and pepper',v) for v in [.01,.05,.1]]+ [('Poisson',v) for v in [10,30,100]]
     for file in files:
