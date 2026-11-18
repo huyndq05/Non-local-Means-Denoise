@@ -1,4 +1,4 @@
-"""Run: python -m streamlit run nlm_lab.py. Grayscale/RGB, 8/16-bit lab."""
+"""Run: python -m streamlit run src/nlm_lab.py. Grayscale/RGB, 8/16-bit lab."""
 import io
 import json
 import time

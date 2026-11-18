@@ -1,6 +1,6 @@
 const test=require('node:test');
 const assert=require('node:assert/strict');
-const Viewport=require('../viewer_component/viewport.js');
+const Viewport=require('../src/viewer_component/viewport.js');
 function near(a,b){assert.ok(Math.abs(a-b)<1e-8,`${a} != ${b}`);}
 test('screen/image coordinate round trip at zoom and pan',()=>{
  const v=new Viewport(512,384);v.zoomAt(4,250,160,500,350);v.pan(-40,20,500,350);

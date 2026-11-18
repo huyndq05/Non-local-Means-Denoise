@@ -6,7 +6,7 @@ import json
 import sys
 import zipfile
 from pathlib import Path
-sys.path.insert(0,str(Path(__file__).resolve().parents[2]))
+sys.path.insert(0,str(Path(__file__).resolve().parents[2]/'src'))
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -16,7 +16,7 @@ import pandas as pd
 from nlm_lab import load_image, filter_image, u8, metrics
 
 ROOT=Path(__file__).resolve().parents[2]
-OUT=ROOT/'report/figures/bo_sung_20261113';OUT.mkdir(parents=True,exist_ok=True)
+OUT=ROOT/'results/report_figures';OUT.mkdir(parents=True,exist_ok=True)
 BASE=ROOT/'results/baseline_v2'
 plt.rcParams.update({'font.family':'DejaVu Sans','font.size':15,'axes.titlesize':16,
                      'axes.labelsize':14,'xtick.labelsize':12,'ytick.labelsize':12,

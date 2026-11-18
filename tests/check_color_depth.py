@@ -4,7 +4,8 @@ import json
 import sys
 import zipfile
 from pathlib import Path
-sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+SRC=Path(__file__).resolve().parents[1]/'src'
+sys.path.insert(0,str(SRC))
 import numpy as np
 import tifffile
 from PIL import Image
@@ -65,7 +66,7 @@ try:load_image(buf,color=True)
 except ValueError:pass
 else:raise AssertionError('float TIFF accepted without explicit intensity policy')
 
-app=AppTest.from_file(str(Path(__file__).resolve().parents[1]/'nlm_lab.py'),default_timeout=90).run()
+app=AppTest.from_file(str(SRC/'nlm_lab.py'),default_timeout=90).run()
 assert not app.exception,app.exception
 assert app.session_state['work'].ndim==3
 next(s for s in app.selectbox if s.label=='Vùng ảnh thực hành').set_value('Crop giữa 128 × 128').run()
@@ -78,7 +79,9 @@ assert all(r['image'].shape==(128,128,3) for r in app.session_state['run']['resu
 next(s for s in app.selectbox if s.label=='Chế độ xử lý').set_value('Chuyển sang ảnh xám').run()
 assert not app.exception,app.exception
 assert app.session_state['work'].ndim==2 and 'run' not in app.session_state
-upload_script='''
+upload_script=f'''
+import sys
+sys.path.insert(0,{repr(str(SRC))})
 from types import SimpleNamespace
 from unittest.mock import patch
 import numpy as np

@@ -1,7 +1,7 @@
 """Numerical checks against a slow independent NLM oracle on tiny arrays."""
 import sys
 from pathlib import Path
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'src'))
 import numpy as np
 from nlm_lab import nlm_own, noise, metrics, filter_image, png, load_image
 import io

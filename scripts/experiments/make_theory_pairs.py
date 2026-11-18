@@ -1,7 +1,7 @@
 """Paired teaching illustrations from the same saved 256-pixel inputs."""
 import sys, io, json, zipfile
 from pathlib import Path
-sys.path.insert(0,str(Path(__file__).resolve().parents[2]))
+sys.path.insert(0,str(Path(__file__).resolve().parents[2]/'src'))
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -9,7 +9,7 @@ import numpy as np
 from PIL import Image
 
 ROOT=Path(__file__).resolve().parents[2]
-OUT=ROOT/'report/figures/bo_sung_20261113'
+OUT=ROOT/'results/report_figures';OUT.mkdir(parents=True,exist_ok=True)
 plt.rcParams.update({'font.family':'DejaVu Sans','font.size':17,'savefig.facecolor':'white'})
 manifest={}
 

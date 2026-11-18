@@ -4,7 +4,7 @@ import json
 import sys
 import zipfile
 from pathlib import Path
-sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'src'))
 import numpy as np
 from nlm_lab import noise, metrics, load_image, png, filter_image
 from experiment import DEFAULTS, METHODS, benchmark, package
@@ -29,7 +29,7 @@ with zipfile.ZipFile(io.BytesIO(payload)) as z:
         assert metrics(x,saved)==next({k:r[k] for k in ['MSE','PSNR_dB','SSIM']} for r in rows if r['method']==method)
 assert all('PSNR_dB' not in r for r in package(x,y,results,p,None,False)[1])
 
-app=AppTest.from_file(str(Path(__file__).resolve().parents[1]/'nlm_lab.py'),default_timeout=120).run()
+app=AppTest.from_file(str(Path(__file__).resolve().parents[1]/'src'/'nlm_lab.py'),default_timeout=120).run()
 assert not app.exception,app.exception
 assert len(app.tabs)==4
 next(b for b in app.button if b.label=='Tạo nhiễu từ ảnh gốc').click().run()

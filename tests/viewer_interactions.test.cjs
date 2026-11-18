@@ -1,7 +1,7 @@
 // Unit harness for actual event handlers; no browser or server dependencies.
 const test=require('node:test'),assert=require('node:assert/strict');
 const vm=require('node:vm'),fs=require('node:fs');
-const Viewport=require('../viewer_component/viewport.js');
+const Viewport=require('../src/viewer_component/viewport.js');
 function harness(){
  const elements={},handlers={},posts=[];
  for(const id of ['left','right','zoom','zoomLabel','lens','status','root','leftTitle','rightTitle','in','out','fit','actual']){
@@ -19,7 +19,7 @@ function harness(){
  class FakeImage{set src(src){this.source=src;this.naturalWidth=256;this.naturalHeight=256;queueMicrotask(()=>this.onload());}}
  const sandbox={window,document,NLMViewport:Viewport,Image:FakeImage,ResizeObserver:class{observe(){}},
    getComputedStyle(){return {getPropertyValue(){return '#ffffff';}};},console};
- vm.runInNewContext(fs.readFileSync(require.resolve('../viewer_component/viewer.js'),'utf8'),sandbox);
+ vm.runInNewContext(fs.readFileSync(require.resolve('../src/viewer_component/viewer.js'),'utf8'),sandbox);
  const event=(extra={})=>({clientX:250,clientY:175,button:0,pointerId:1,preventDefault(){},...extra});
  const render=(left='noisy',right='method1')=>handlers.message({source:parent,data:{type:'streamlit:render',args:{left,right,image_width:256,image_height:256,left_title:'Left',right_title:'Right'}}});
  function sameGeometry(){

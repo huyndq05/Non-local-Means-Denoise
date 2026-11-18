@@ -1,8 +1,11 @@
-"""Run paired baseline experiments. python benchmark_nlm.py --help"""
+"""Run paired baseline experiments. python scripts/benchmark_nlm.py --help"""
 import argparse
 import hashlib
 import json
+import sys
 from pathlib import Path
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'src'))
 import numpy as np
 import pandas as pd
 from nlm_lab import load_image, noise, metrics, png

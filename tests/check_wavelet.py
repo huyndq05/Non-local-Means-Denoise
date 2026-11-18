@@ -1,7 +1,8 @@
 """Exercise both automatic sigma and the missing-optional-dependency path."""
 import sys
 from pathlib import Path
-sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+SRC=Path(__file__).resolve().parents[1]/'src'
+sys.path.insert(0,str(SRC))
 import numpy as np
 from skimage.restoration import estimate_sigma
 from streamlit.testing.v1 import AppTest
@@ -9,7 +10,9 @@ from streamlit.testing.v1 import AppTest
 image=128.+np.random.default_rng(42).normal(0,20,(128,128))
 sigma=estimate_sigma(image,channel_axis=None)
 assert 17 < sigma < 23, sigma
-script='''
+script=f'''
+import sys
+sys.path.insert(0,{repr(str(SRC))})
 from unittest.mock import patch
 import app_ui
 with patch.object(app_ui, 'estimate_sigma', side_effect=ImportError('PyWavelets missing')):

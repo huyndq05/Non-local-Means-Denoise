@@ -2,7 +2,7 @@
 import sys
 from pathlib import Path
 import tomllib
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'src'))
 from streamlit.testing.v1 import AppTest
 from ui_theme import STYLES
 
@@ -32,7 +32,7 @@ import re
 assert not re.search(r'background(?:-color)?\s*:',STYLES), 'Native theme must own surface colors'
 assert all(value.strip()=='inherit' for value in re.findall(r'(?<![\w-])color\s*:\s*([^;}]+)',STYLES))
 
-app=AppTest.from_file(str(ROOT/'nlm_lab.py'),default_timeout=60).run()
+app=AppTest.from_file(str(ROOT/'src'/'nlm_lab.py'),default_timeout=60).run()
 assert not app.exception,app.exception
 assert app.session_state['work'].shape[:2]==(256,256)
 next(s for s in app.selectbox if s.label=='Vùng ảnh thực hành').set_value('Crop giữa 128 × 128').run()

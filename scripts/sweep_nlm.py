@@ -1,5 +1,8 @@
 """Controlled one-factor NLM study on three fixed calibration crops."""
+import sys
 from pathlib import Path
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'src'))
 import pandas as pd
 from nlm_lab import load_image, noise, metrics
 from experiment import DEFAULTS, benchmark, csv_bytes
@@ -7,7 +10,7 @@ from experiment import DEFAULTS, benchmark, csv_bytes
 
 def main():
     rows=[]
-    for file in sorted(Path('data/clean_gray').glob('*.png')):
+    for file in sorted((ROOT/'data/clean_gray').glob('*.png')):
         if file.name[:2] not in ['02','06','09']: continue
         x=load_image(file); y=(x.shape[0]-256)//2; z=(x.shape[1]-256)//2
         x=x[y:y+256,z:z+256]; v=noise(x,'Gaussian',20,42)
@@ -19,7 +22,7 @@ def main():
                 rec=benchmark(v,['NLM tự cài đặt'],p,3,True)['NLM tự cài đặt']
                 rows.append(dict(image=file.name,variable=variable,value=value,**p,
                                  **metrics(x,rec['image']),seconds=rec['seconds']))
-    out=Path('results/sweep_v2'); out.mkdir(exist_ok=True,parents=True)
+    out=ROOT/'results/sweep_v2'; out.mkdir(exist_ok=True,parents=True)
     (out/'metrics.csv').write_bytes(csv_bytes(rows))
     pd.DataFrame(rows).groupby(['variable','value']).agg(n=('image','count'),PSNR=('PSNR_dB','mean'),
         SSIM=('SSIM','mean'),seconds=('seconds','mean')).reset_index().to_csv(out/'summary.csv',index=False,encoding='utf-8-sig')

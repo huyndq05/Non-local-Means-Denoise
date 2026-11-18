@@ -1,4 +1,4 @@
-"""Vietnamese NLM teaching lab. Run through nlm_lab.py."""
+"""Vietnamese NLM teaching lab. Run through src/nlm_lab.py."""
 import hashlib
 import io
 from pathlib import Path
@@ -10,7 +10,7 @@ from experiment import METHODS, benchmark, package, csv_bytes
 from ui_theme import STYLES, section
 from sync_viewer import compare_images
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]
 
 
 def reset_work(image):
@@ -280,7 +280,7 @@ def main():
             st.caption('ZIP gồm ảnh sạch, ảnh nhiễu, đầu ra Python, đầu ra Fiji nếu đã nhập, metrics.csv, metadata.json và so sánh Fiji. Kiểm tra cấu hình Fiji nhập tay khớp thao tác thực.')
         else:
             st.info('Chạy bộ lọc Python để xuất gói thí nghiệm đầy đủ.')
-        macro=ROOT/'fiji_psnr.ijm'
+        macro=ROOT/'scripts/fiji/fiji_psnr.ijm'
         if macro.exists():
             st.download_button('Tải macro MSE và PSNR cho Fiji',macro.read_bytes(),macro.name)
     with tabs[3]:
